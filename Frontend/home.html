@@ -5,34 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/home.css">
     <link rel="icon" href="img/Rose.ico">
 </head>
 <body>
-    <nav>
-        <div>
-            <img src="img/Logo-ITP.png" alt="logo-ITP">
+    <!-- Header -->
+    <header>
+        <div class="header-left">
+            <a href="home.html"><img src="img/Logo-ITP.png" alt="logo-ITP"></a>
         </div>
-        <div>
+        <!-- Menu -->
+        <nav class="header-right">
             <ul>
                 <li><a href="#">Who we are</a></li>
-                <li>Our service</li>
+                <li class="menu-service">Our service</li>
+                <div class="dropdown-service">
                     <li><a href="#">Marketing</a></li>
                     <li><a href="#">Technology</a></li>
+                </div>
                 <li><a href="#">News & Event</a></li>
                 <li><a href="#">Careers</a></li>
-                <li><a href="#">Contact us</a></li> |
-                <li>English</li>
+                <li><a href="#">Contact us</a></li> 
+                <li><span>|&nbsp;&nbsp;&nbsp;&nbsp;</span>English</li>
             </ul>
-        </div>
-    </nav>
-    <header style="background-image: url('img/background-header.png');">
-        <div >
+        </nav>
+        <!-- End Menu -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Banner-->
+    <section style="background-image: url('img/background-header.png');">
+        <div class="banner">
             <h1>Marketing Service</h1>
             <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
                 It has survived not only five centuries,</p>
-            <button>See more</button>
+            <a href="#">See more</a>
         </div>
-    </header>
+    </section>
     <section>
         <div class="about-us">
             <img src="img/about-us.png" alt="about-us">
@@ -41,12 +52,17 @@
             <h1>About us</h1>
             <p><strong>ITP, we established in 1916 year in Kyoto, Japan. 
                 Our culture will bring their customer how to easy understanding by tools.</strong></p>
-            <p>While, Creasia, we established in 2011 years in Ho Chi Minh, Vietnam.</p>
-            <p>Our policy will bring the customer delight through the activation.</p>
-            <p>ITP&CREASIA, we marge for appealing with own strong points in Vietnam.</p>
-            <p>We will provide delivery to consult Vietnamese companies and overseas with a smile.</p>
+            <pre>
+            While, Creasia, we established in 2011 years in Ho Chi Minh, Vietnam.
+            Our policy will bring the customer delight through the activation.
+            ITP&CREASIA, we marge for appealing with own strong points in Vietnam.
+            We will provide delivery to consult Vietnamese companies and overseas with a smile.
+            </pre>
         </div>
     </section>
+    <!-- End Banner -->
+
+    <!-- Main -->
     <section>
         <div class="our-service">
             <h1>Our service</h1>
@@ -54,7 +70,7 @@
         <div class="out-service">
             <h2>Marketing Service</h2>
             <p>We are a digital and branding company that believes in the power of creative
-                 strategy and along with great design</p>
+                    strategy and along with great design</p>
             <ul>
                 <li>Activation</li>
                 <li>Creative Design</li>
@@ -65,7 +81,7 @@
         <div class="out-service">
             <h2>Technology Solution</h2>
             <p>We are a digital and branding company that believes in the power
-                 of creative strategy and along with great design</p>
+                    of creative strategy and along with great design</p>
             <ul>
                 <li>App/Web Development</li>
                 <li>System Development</li>
@@ -90,7 +106,7 @@
         <div class="our-client">
             <h1>Our client</h1>
             <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra, sit aliquam adipiscing etiam nunc.
-                 Volutpat augue fusce fermentum congue risus in velit maecenas scelerisque. </strong></p>
+                    Volutpat augue fusce fermentum congue risus in velit maecenas scelerisque. </strong></p>
         </div>
         <div class="our-client">
             <ul>
@@ -102,7 +118,7 @@
             </ul>
         </div>
     </section>
-    <aside>
+    <section>
         <div class="recent-news">
             <h1>Recent News</h1>
         </div>
@@ -136,9 +152,12 @@
             </div>
         </div>
         <div class="recent-news">
-            <button>View all</button>
+            <a href="#">View all</a>
         </div>
-    </aside>
+    </section>
+    <!-- End Main -->
+
+    <!-- Footer -->
     <footer>
         <div class="company-info">
             <h1>ITP & CREASIA COMPANY</h1>
@@ -157,5 +176,6 @@
             </ul>
         </div>
     </footer>
+    <!-- End Footer-->
 </body>
 </html>
