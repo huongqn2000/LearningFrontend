@@ -4,11 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 li{
     list-style: none;
 }
-
 a{
     text-decoration: none;
 }
@@ -20,6 +18,7 @@ a{
     margin-right: auto;
     margin-left: auto;
     justify-content: space-between;
+    font-family: 'Noto Sans JP', sans-serif;
 }
 #header{
     width: 100%;
@@ -31,8 +30,12 @@ header{
     display: flex;
     text-align: center;
 }
-header a{
+.menu__dropdown a{
     color: #081843;
+    font-size: 18px;
+}
+.dropdown__detail a{
+    font-size: 16px;
 }
 .menu{
     width: 6%;
