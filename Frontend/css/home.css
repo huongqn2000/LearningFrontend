@@ -1,0 +1,12 @@
+/* Banner */
+.banner{
+    background-image: url('../img/background-header-mobile.png');
+    height: 410px;
+    text-align: center;
+}
+.box{
+    height: 240px;
+    background-color: rgba(47,101,194, 0.7);
+    margin-top: auto;
+    margin-bottom: auto;
+}
