@@ -1,0 +1,239 @@
+:root {
+  --color-heading: #2F65C2;
+  --color-menu: #081843;
+  --primary-color: #F6FAFE;
+  --second-color: rgba(47, 101, 194, 1);
+  --third-color: rgba(222, 65, 65, 1);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: white;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body li {
+  list-style-type: none;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .container-fluid {
+    max-width: none;
+  }
+}
+
+.container-fluid img {
+  max-width: 100%;
+}
+
+/* Header */
+header {
+  background-color: aquamarine;
+  height: 70px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  overflow: hidden;
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 23px;
+  font-size: 16px;
+}
+
+@media (min-width: 992px) {
+  header {
+    height: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0 145px 0 130px;
+  }
+}
+
+header .menu-mobile {
+  width: 6%;
+  padding-top: 2%;
+}
+
+@media (min-width: 992px) {
+  header .menu-mobile {
+    padding: 0;
+    width: 60%;
+    height: 100%;
+  }
+}
+
+header .menu-mobile .menu__icon {
+  height: 100%;
+}
+
+@media (min-width: 992px) {
+  header .menu-mobile .menu__icon {
+    display: none;
+  }
+}
+
+header .menu-mobile .menu__dropdown {
+  position: absolute;
+  width: 100%;
+  background: white;
+  z-index: 2;
+}
+
+@media (min-width: 992px) {
+  header .menu-mobile .menu__dropdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 70%;
+  }
+  header .menu-mobile .menu__dropdown:hover .dropdown__detail {
+    display: block;
+  }
+}
+
+header .menu-mobile .menu__dropdown a {
+  color: #081843;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+header .menu-mobile .menu__dropdown li {
+  width: 94%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3%;
+  padding-bottom: 2%;
+  border-bottom: 1px #C3C3C3 solid;
+}
+
+@media (min-width: 992px) {
+  header .menu-mobile .menu__dropdown li {
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  header .menu-mobile .menu__dropdown li:hover {
+    border-bottom: 3px steelblue solid;
+    -webkit-transition-delay: 1ms;
+            transition-delay: 1ms;
+  }
+}
+
+header .menu-mobile .menu__dropdown .dropdown__detail {
+  margin-left: 2%;
+}
+
+@media (min-width: 992px) {
+  header .menu-mobile .menu__dropdown .dropdown__detail {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  header .menu-mobile .menu__dropdown .dropdown__detail li {
+    width: 100%;
+    height: 50%;
+    text-align: left;
+    padding: 10px;
+    margin: 0;
+  }
+}
+
+header .menu-mobile .menu__dropdown .dropdown__detail a {
+  font-size: 16px;
+}
+
+header .menu-mobile .menu__dropdown > li:last-child {
+  border-bottom: none;
+}
+
+header .menu-mobile .menu__dropdown .dropdown__service li {
+  position: relative;
+}
+
+header .menu-mobile .menu__dropdown .dropdown__service .arrow {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: absolute;
+  width: 5%;
+  right: 0;
+}
+
+@media (min-width: 992px) {
+  header .menu-mobile .menu__dropdown .dropdown__service .arrow {
+    display: none;
+  }
+}
+
+header .menu-mobile .menu__dropdown .dropdown__service #arrow__down {
+  display: none;
+}
+
+header .logo {
+  width: 83%;
+  padding-top: 1%;
+}
+
+@media (min-width: 992px) {
+  header .logo {
+    width: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0;
+  }
+}
+
+header .language {
+  width: 11%;
+  padding-top: 3%;
+}
+
+@media (min-width: 992px) {
+  header .language {
+    padding: 0;
+    width: 10%;
+    left: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  header .language .text-mb {
+    display: none;
+  }
+}
+
+header .language .text-pc {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  header .language .text-pc {
+    display: block;
+  }
+}
+/*# sourceMappingURL=test.css.map */
